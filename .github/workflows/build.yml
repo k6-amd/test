@@ -1,7 +1,7 @@
 name: a moi
 on:
   push:
-    branches: [ dave ]
+    branches: [ dave ] 
 jobs:
   ansible:
     name: run playbook
