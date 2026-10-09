@@ -10,6 +10,10 @@ jobs:
       # Checkout : récupère le docker-compose.yml à jour depuis le dépôt
       - name: Checkout du dépôt
         uses: actions/checkout@v7
+      - name: injection des vaults
+        working-directory: ${{ github.workspace }}
+        run: |
+          cp /home/ansible/test/.vault /home/ansible/test/test/.vault
       - name: run ansible-playbook
         working-directory: ${{ github.workspace }}
         run: |
