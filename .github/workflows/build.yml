@@ -1,0 +1,16 @@
+name: a moi
+on:
+  push:
+    branches: [ dave ]
+jobs:
+  ansible:
+    name: run playbook
+    runs-on: [self-hosted, yig]
+    steps:
+      # Checkout : récupère le docker-compose.yml à jour depuis le dépôt
+      - name: Checkout du dépôt
+        uses: actions/checkout@v7
+      - name: run ansible-playbook
+        working-directory: ${{ github.workspace }}/docker
+        run: |
+          echo coucou
