@@ -13,4 +13,4 @@ jobs:
       - name: run ansible-playbook
         working-directory: ${{ github.workspace }}
         run: |
-          echo coucou
+          ansible-playbook playbook.yml
