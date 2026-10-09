@@ -11,6 +11,6 @@ jobs:
       - name: Checkout du dépôt
         uses: actions/checkout@v7
       - name: run ansible-playbook
-        working-directory: ${{ github.workspace }}/docker
+        working-directory: ${{ github.workspace }}
         run: |
           echo coucou
