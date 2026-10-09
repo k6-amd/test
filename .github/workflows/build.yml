@@ -20,4 +20,4 @@ jobs:
           ansible-playbook playbook.yml
       - name: kill them all
         run: |
-          rm -rf /home/ansible/test/
+          rm -rf /home/ansible/test/test/

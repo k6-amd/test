@@ -2,5 +2,5 @@
 - hosts: all
   become: true
   tasks:
-    - name: ping
+    - name: pingG
       ansible.builtin.ping:
